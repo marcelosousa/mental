@@ -14,6 +14,8 @@ The goal is to find out whether git representation of codebases based on files i
 Particular questions:
 
 1. Is it an overkill to hash the AST instead of the file contents? To answer this question, I need to understand how the compression mechanism works in git.
+The naive version of git will create a new file even if you only touch a single character because it's based on hashing.
+Need to revisit (https://git-scm.com/book/en/v2/Git-Internals-Packfiles)
 
 
 Some useful references to similar projects:
